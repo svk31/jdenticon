@@ -1,0 +1,20 @@
+{
+  "name": "jdenticon",
+  "version": "1.1.0",
+  "description": "Jdenticon fork compatible with npm",
+  "main": "jdenticon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svk31/jdenticon.git"
+  },
+  "author": "Daniel Mester Pirttijärvi",
+  "contributors": ["Sigve Kvalsvik <bitsharesblocks@gmail.com>"],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svk31/jdenticon/issues"
+  },
+  "homepage": "https://github.com/svk31/jdenticon#readme"
+}
