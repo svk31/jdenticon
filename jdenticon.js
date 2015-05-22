@@ -487,7 +487,6 @@ function drawIcon(ctx, hash, size) {
 function updateById(id) {
     var hash, 
         canvas = document.getElementById(id);
-    console.log("tried to fetch element by id:", id, "got:", canvas);
     hash = canvas.getAttribute(HASH_ATTRIBUTE);
 
     if (hash) {
