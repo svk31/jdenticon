@@ -484,6 +484,17 @@ function drawIcon(ctx, hash, size) {
 /**
  * Updates all canvas elements with the data-jdenticon-hash attribute.
  */
+function updateById(id) {
+    var hash, 
+        canvas = document.getElementById(id);
+    console.log("tried to fetch element by id:", id, "got:", canvas);
+    hash = canvas.getAttribute(HASH_ATTRIBUTE);
+
+    if (hash) {
+        update(canvas, hash, 0);
+    }
+}
+
 function jdenticon() {
     var hash, 
         canvases = document.getElementsByTagName("canvas");
@@ -491,7 +502,7 @@ function jdenticon() {
     for (var i = 0; i < canvases.length; i++) {
         hash = canvases[i].getAttribute(HASH_ATTRIBUTE);
         if (hash) {
-            update(canvases[i], hash);
+            update(canvases[i], hash, 0);
         }
     }
 }
@@ -509,4 +520,4 @@ if (jQuery) {
     };
 }
     
-module.exports = jdenticon;
+module.exports = {jdenticon: jdenticon, updateById: updateById};
